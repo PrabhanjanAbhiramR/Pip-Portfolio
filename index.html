@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fdf1e3">
+    <meta name="description" content="Meet Pip, Junior Dream Engineer at the Midnight Nursery.">
+    <title>Pip's Midnight Nursery</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232a1f45'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='40' fill='%23ffc45c'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" async></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="wordmark" href="#top">Pip's <span>Midnight Nursery</span></a>
+        <div class="nav-links">
+          <a href="#made">Things I made</a>
+          <a href="#story">My story</a>
+        </div>
+        <div class="nav-controls">
+          <button class="nav-toggle sound-toggle" type="button" aria-pressed="false" aria-label="Turn sound on">♫ <span>Sound</span></button>
+          <button class="nav-toggle theme-toggle" type="button" aria-pressed="false" aria-label="Turn bedtime mode on"><span class="toggle-icon" aria-hidden="true">☾</span><span>Bedtime</span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✦</span> Junior Dream Engineer · Midnight Nursery</p>
+          <h1 id="hero-title">Hi, I'm <span>Pip.</span></h1>
+          <p class="hero-tagline">I build the dreams you fall asleep inside.</p>
+          <p class="hero-caption">Small skull. Big dream energy. I make sure every night has a little wonder in it.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#made">See what I've made <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="#story">Meet Pip <span aria-hidden="true">♡</span></a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true">✧</span> Currently accepting bedtime requests</p>
+        </div>
+
+        <div class="hero-art">
+          <div class="portrait-frame">
+            <div class="portrait-sky" aria-hidden="true"><span class="sky-star star-one">✦</span><span class="sky-star star-two">✧</span><span class="sky-moon">☾</span></div>
+            <div class="portrait-fallback" aria-hidden="true">
+              <span class="fallback-cloud"></span>
+              <span class="fallback-body"></span>
+              <span class="fallback-face"><i class="fallback-eye eye-left"></i><i class="fallback-eye eye-right"></i><i class="fallback-nose"></i></span>
+              <span class="fallback-nightcap"><i></i></span>
+            </div>
+            <img class="pip-image" src="assets/pip_avatar_cloud.jpg" alt="Pip, a friendly skull baby wearing a nightcap, sitting on a cloud" width="896" height="1090" fetchpriority="high">
+            <div class="portrait-caption"><span class="caption-dot" aria-hidden="true"></span> Pip, on cloud nine</div>
+            <button class="secret-star" type="button" aria-label="Reveal Pip's secret" aria-expanded="false" aria-controls="pip-secret-message" title="A tiny secret">✦</button>
+            <p class="secret-message" id="pip-secret-message" hidden>Four little notes, one very big secret: Pip believes in you.</p>
+          </div>
+          <aside class="welcome-note" aria-label="Welcome message">
+            <button class="dismiss-note" type="button" aria-label="Dismiss welcome message">×</button>
+            <span class="note-sparkle" aria-hidden="true">✦</span>
+            <p class="welcome-greeting">Welcome! Pip saved you a cloud.</p>
+            <p class="visit-line">This is your <strong class="visit-number">1st</strong> visit.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="ticker-band" aria-label="A note from Pip">
+        <div class="ticker-track" aria-hidden="true"><span>Welcome to Pip's Midnight Nursery&nbsp; ✦ &nbsp;Best viewed at bedtime&nbsp; ✦ &nbsp;Welcome to Pip's Midnight Nursery&nbsp; ✦ &nbsp;Best viewed at bedtime&nbsp; ✦ &nbsp;</span></div>
+      </section>
+
+      <section class="counter-row section-wrap" aria-label="Nursery counters">
+        <div class="counter-box counter-dreams"><span class="counter-icon" aria-hidden="true">☁</span><span class="counter-label">Dreams delivered</span><strong class="counter-value">1,284</strong></div>
+        <div class="counter-box counter-visitors"><span class="counter-icon" aria-hidden="true">✧</span><span class="counter-label">Visitor number</span><strong class="counter-value visitor-counter">00001</strong></div>
+      </section>
+
+      <section class="work-section section-wrap" id="made" aria-labelledby="made-title">
+        <div class="section-heading">
+          <p class="eyebrow">A few things from the workshop</p>
+          <h2 id="made-title">Things I made<span class="heading-period">.</span></h2>
+        </div>
+        <div class="project-grid">
+          <a class="project-card card-berry" href="#lullaby-lab">
+            <div class="polaroid-art"><img src="assets/pip_lullaby_box.jpg" alt="A little music box from Pip's Lullaby Lab" width="1024" height="924" loading="lazy" decoding="async" fetchpriority="low"></div>
+            <div class="project-copy"><span class="project-index">01 / sound</span><h3>The Lullaby Lab</h3><p>Soft songs for soft landings.</p></div>
+            <span class="card-sticker" aria-hidden="true">♫</span>
+          </a>
+          <a class="project-card card-lavender" href="#nightlight-lab">
+            <div class="polaroid-art"><img src="assets/pip_dream_lantern.jpg" alt="A glowing dream lantern from Pip's nightlight collection" width="1024" height="914" loading="lazy" decoding="async" fetchpriority="low"></div>
+            <div class="project-copy"><span class="project-index">02 / light</span><h3>Nightlight Collection</h3><p>Little lights for the long night.</p></div>
+            <span class="card-sticker" aria-hidden="true">☼</span>
+          </a>
+          <article class="project-card card-amber">
+            <div class="growth-art" role="img" aria-label="Three bars showing Pip growing from a tiny sprout to a dream engineer"><span class="growth-sun">✦</span><div class="growth-bars"><span class="growth-bar bar-one"></span><span class="growth-bar bar-two"></span><span class="growth-bar bar-three"></span></div><span class="growth-ground"></span><span class="growth-label label-one">tiny</span><span class="growth-label label-two">brave</span><span class="growth-label label-three">Pip!</span></div>
+            <div class="project-copy"><span class="project-index">03 / growing</span><h3>Pip's Growth Chart</h3><p>Look how far these bones have come.</p></div>
+            <span class="card-sticker" aria-hidden="true">♡</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="lullaby-section section-wrap" id="lullaby-lab" aria-labelledby="lullaby-title">
+        <div class="lullaby-panel" data-music-state="muted">
+          <header class="lullaby-intro">
+            <div class="section-heading lullaby-heading">
+              <p class="eyebrow">Pip's invention no. 01</p>
+              <h2 id="lullaby-title">The Lullaby Lab<span class="heading-period">.</span></h2>
+              <p class="lullaby-description">Wind up a pocket-sized dream. Tap Pip's enchanted charms and the box will remember your last sixteen notes.</p>
+            </div>
+            <p class="lullaby-state-badge"><span class="state-spark" aria-hidden="true">✦</span><span data-music-state-label>Sound is off</span></p>
+          </header>
+
+          <div class="lullaby-layout">
+            <figure class="music-box-stage">
+              <span class="stage-star stage-star-one" aria-hidden="true">✦</span>
+              <span class="stage-star stage-star-two" aria-hidden="true">·</span>
+              <div class="lullaby-image-frame">
+                <img src="assets/pip_lullaby_box.jpg" alt="A pink and gold lullaby music box topped with a tiny carousel horse" width="1024" height="924" loading="lazy" decoding="async" fetchpriority="low">
+              </div>
+              <figcaption class="music-box-caption">
+                <span>Cloudfall music box</span>
+                <strong>Hand-tuned by Pip</strong>
+              </figcaption>
+              <span class="winding-key" aria-hidden="true"><span></span></span>
+            </figure>
+
+            <div class="lullaby-player">
+              <div class="player-topline">
+                <div class="now-playing" aria-hidden="true">
+                  <span class="playing-pulse"></span>
+                  <span><small>Now playing</small><strong class="now-playing-note">Waiting for a note</strong></span>
+                </div>
+                <p>Every charm joins your tune. The oldest note rolls away when you reach sixteen.</p>
+              </div>
+
+              <div class="music-star-grid" role="group" aria-label="Eight music box notes">
+                <button class="music-star note-charm note-rose" type="button" data-note-index="0" aria-label="Play and record note C5" aria-keyshortcuts="A"><span class="note-symbol" aria-hidden="true">☾</span><span class="note-name">C5</span><span class="note-key" aria-hidden="true">A</span></button>
+                <button class="music-star note-charm note-lilac" type="button" data-note-index="1" aria-label="Play and record note D5" aria-keyshortcuts="S"><span class="note-symbol" aria-hidden="true">✦</span><span class="note-name">D5</span><span class="note-key" aria-hidden="true">S</span></button>
+                <button class="music-star note-charm note-sky" type="button" data-note-index="2" aria-label="Play and record note E5" aria-keyshortcuts="D"><span class="note-symbol" aria-hidden="true">☁</span><span class="note-name">E5</span><span class="note-key" aria-hidden="true">D</span></button>
+                <button class="music-star note-charm note-gold" type="button" data-note-index="3" aria-label="Play and record note G5" aria-keyshortcuts="F"><span class="note-symbol" aria-hidden="true">♪</span><span class="note-name">G5</span><span class="note-key" aria-hidden="true">F</span></button>
+                <button class="music-star note-charm note-mint" type="button" data-note-index="4" aria-label="Play and record note A5" aria-keyshortcuts="G"><span class="note-symbol" aria-hidden="true">♡</span><span class="note-name">A5</span><span class="note-key" aria-hidden="true">G</span></button>
+                <button class="music-star note-charm note-blush" type="button" data-note-index="5" aria-label="Play and record note C6" aria-keyshortcuts="H"><span class="note-symbol" aria-hidden="true">♬</span><span class="note-name">C6</span><span class="note-key" aria-hidden="true">H</span></button>
+                <button class="music-star note-charm note-violet" type="button" data-note-index="6" aria-label="Play and record note D6" aria-keyshortcuts="J"><span class="note-symbol" aria-hidden="true">✧</span><span class="note-name">D6</span><span class="note-key" aria-hidden="true">J</span></button>
+                <button class="music-star note-charm note-amber" type="button" data-note-index="7" aria-label="Play and record note E6" aria-keyshortcuts="K"><span class="note-symbol" aria-hidden="true">★</span><span class="note-name">E6</span><span class="note-key" aria-hidden="true">K</span></button>
+              </div>
+
+              <div class="shortcut-guide" aria-label="Keyboard shortcut guide">
+                <span class="shortcut-title">Keyboard spell</span>
+                <div class="shortcut-keys" aria-hidden="true"><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd><kbd>H</kbd><kbd>J</kbd><kbd>K</kbd></div>
+                <span class="shortcut-caption">low notes → high notes</span>
+              </div>
+
+              <div class="tune-strip">
+                <div class="tune-strip-heading">
+                  <span><span aria-hidden="true">♫</span> Your pocket lullaby</span>
+                  <span class="tune-count">0 / 16 notes</span>
+                </div>
+                <div class="recorded-sequence" role="list" aria-label="Your recorded notes">
+                  <p class="tune-empty">No notes tucked away yet. Play a charm to begin.</p>
+                </div>
+              </div>
+
+              <p class="music-status" role="status" aria-live="polite">Sound is off. Your notes can still be recorded.</p>
+              <div class="music-actions" aria-label="Lullaby Lab controls">
+                <button class="button button-primary music-action action-wide" type="button" data-music-control data-music-action="lullaby"><span aria-hidden="true">♪</span> Play Pip's lullaby</button>
+                <button class="button button-secondary music-action" type="button" data-music-control data-music-action="my-tune"><span aria-hidden="true">↻</span> Replay my tune</button>
+                <button class="button button-secondary music-action" type="button" data-music-control data-music-action="stop" disabled><span aria-hidden="true">■</span> Stop</button>
+                <button class="button button-secondary music-action" type="button" data-music-control data-music-action="clear"><span aria-hidden="true">×</span> Clear</button>
+                <button class="button button-secondary music-action music-sound-action" type="button" data-music-sound-toggle aria-pressed="false" aria-label="Turn sound on"><span class="sound-action-icon" aria-hidden="true">♫</span><span class="sound-action-label">Sound off</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nightlight-section section-wrap" id="nightlight-lab" aria-labelledby="nightlight-title">
+        <div class="nightlight-panel">
+          <div class="section-heading nightlight-heading">
+            <p class="eyebrow">A little light for the long night</p>
+            <h2 id="nightlight-title">The Nightlight Collection<span class="heading-period">.</span></h2>
+          </div>
+          <div class="nightlight-layout">
+            <div class="nightlight-copy">
+              <p>Pip misplaced three tiny dream lamps in the nursery. Move the glow around the dark to help find them.</p>
+              <p class="nightlight-instructions" id="nightlight-instructions">Move your pointer, drag with a finger, or focus the scene and use the arrow keys.</p>
+              <div class="nightlight-actions">
+                <button class="button button-primary light-toggle" type="button" aria-pressed="true">Turn light off</button>
+                <button class="button button-secondary light-reset" type="button">Reset lamps</button>
+              </div>
+              <p class="lamp-counter" role="status" aria-live="polite"><strong class="lamps-found">0</strong> of <strong class="lamps-total">3</strong> lamps found</p>
+            </div>
+            <div class="nightlight-scene" tabindex="0" aria-label="Dark nursery flashlight scene" aria-describedby="nightlight-instructions" aria-keyshortcuts="ArrowUp ArrowDown ArrowLeft ArrowRight" data-light-on="true">
+              <img class="nightlight-background" src="assets/pip_dream_lantern.jpg" alt="" width="1024" height="914" aria-hidden="true" draggable="false" loading="lazy" decoding="async" fetchpriority="low">
+              <span class="dream-lamp lamp-one" data-lamp-x="22" data-lamp-y="30" aria-hidden="true">✦</span>
+              <span class="dream-lamp lamp-two" data-lamp-x="76" data-lamp-y="34" aria-hidden="true">☾</span>
+              <span class="dream-lamp lamp-three" data-lamp-x="68" data-lamp-y="76" aria-hidden="true">✧</span>
+              <span class="flashlight-hint" aria-hidden="true">Move the glow</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="section-wrap story-inner">
+          <div class="section-heading story-heading">
+            <p class="eyebrow">A very short origin story</p>
+            <h2 id="story-title">How I got here<span class="heading-period">.</span></h2>
+          </div>
+          <div class="story-list">
+            <article class="story-scene scene-one"><span class="scene-number">01</span><span class="scene-doodle" aria-hidden="true">☁</span><p>I woke up on a cloud.</p></article>
+            <article class="story-scene scene-two"><span class="scene-number">02</span><span class="scene-doodle" aria-hidden="true">♫</span><p>A music box taught me to hum.</p></article>
+            <article class="story-scene scene-three"><span class="scene-number">03</span><span class="scene-doodle" aria-hidden="true">☾</span><p>The nursery needed a night shift.</p></article>
+            <article class="story-scene scene-four"><span class="scene-number">04</span><span class="scene-doodle" aria-hidden="true">✦</span><p>Now I deliver dreams across the rooftops.</p></article>
+          </div>
+          <p class="story-signoff">And I wouldn't trade this shift for anything <span aria-hidden="true">♡</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner section-wrap"><a class="footer-mark" href="#top">Pip <span>✦</span></a><p>Pip art: official haX.baby Track 1 asset pack. Built by [YOUR NAME].</p><a class="back-top" href="#top" aria-label="Back to top">↑</a></div>
+    </footer>
+  </body>
+</html>

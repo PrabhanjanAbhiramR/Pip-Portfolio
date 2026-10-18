@@ -108,7 +108,7 @@ html[data-theme="night"] .portrait-fallback { filter: brightness(.78) saturate(.
 .fallback-nightcap i { position: absolute; top: -10px; right: -8px; width: 18px; height: 18px; border: 2px solid var(--border); border-radius: 50%; background: var(--paper); }
 .portrait-caption { position: absolute; right: 13px; bottom: 13px; left: 13px; z-index: 2; min-height: 38px; padding: 7px 12px; border: 2px solid var(--border); border-radius: 999px; background: var(--paper); display: flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 600; }
 .caption-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--berry); }
-.secret-star { position: absolute; top: 17%; left: 45%; z-index: 2; width: 48px; min-height: 48px; border: 2px solid var(--border); border-radius: 50%; background: var(--amber); color: var(--plum); box-shadow: 3px 3px 0 var(--shadow-color); font-size: 22px; transition: transform 160ms ease; }
+.secret-star { position: absolute; top: -20px; right: 18px; left: auto; z-index: 2; width: 48px; min-height: 48px; border: 2px solid var(--border); border-radius: 50%; background: var(--amber); color: var(--plum); box-shadow: 3px 3px 0 var(--shadow-color); font-size: 22px; transition: transform 160ms ease; }
 .secret-star:hover { transform: rotate(18deg) scale(1.08); }
 .secret-message { position: absolute; top: calc(100% + 42px); left: 50%; z-index: 2; width: min(230px, 82vw); margin: 0; padding: 12px 14px; border: 2px solid var(--border); border-radius: 16px; background: var(--paper); box-shadow: 4px 4px 0 var(--shadow-color); font-size: 14px; transform: translateX(-50%); }
 .hero-art.has-secret-message { padding-bottom: 160px; }
@@ -334,7 +334,7 @@ html[data-theme="night"] .card-amber { background: var(--night-card-amber); }
   .hero-art.has-secret-message { padding-bottom: 156px; }
   .portrait-frame { border-radius: 36% 36% 22px 22px; }
   .welcome-note { right: -2px; width: 208px; }
-  .secret-star { top: 17%; right: auto; left: 45%; }
+  .secret-star { top: -20px; right: 18px; left: auto; }
   .ticker-track { padding-block: 9px; font-size: 13px; }
   .counter-row { gap: 11px; padding-block: 29px 58px; }
   .counter-box { min-height: 96px; padding: 12px 10px; grid-template-columns: 25px 1fr; gap: 4px 7px; }
